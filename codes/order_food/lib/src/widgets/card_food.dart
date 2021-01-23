@@ -27,6 +27,7 @@ class _MiCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 23.0),
+      width: Utils.porcientoW(context, 75),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20.0),
@@ -39,7 +40,6 @@ class _MiCard extends StatelessWidget {
           )
         ]
       ),
-      width: Utils.porcientoW(context, 75),
       child: Padding(
         padding: EdgeInsets.only(left: 50.0),
         child: Column(
